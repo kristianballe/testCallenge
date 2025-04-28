@@ -1,0 +1,31 @@
+{
+  "name": "testcallenge",
+  "version": "1.0.0",
+  "description": "testChallenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require step_definitions/*.js --require support/hooks.js --format json:reports/json/cucumber_report.json",
+    "report": "node generate-report.js",
+    "e2e": "npm run test && npm run report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristianballe/testCallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristianballe/testCallenge/issues"
+  },
+  "homepage": "https://github.com/kristianballe/testCallenge#readme",
+  "keywords": [],
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.52.0",
+    "playwright": "^1.52.0"
+  },
+  "dependencies": {
+    "chai": "^5.2.0",
+    "cucumber-html-reporter": "^7.2.0"
+  }
+}
