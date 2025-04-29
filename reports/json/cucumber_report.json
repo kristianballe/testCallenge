@@ -4,83 +4,69 @@
     "elements": [
       {
         "description": "",
-        "id": "login-functionality;successful-login",
+        "id": "logout-functionality;user-logout-to-swag-labs",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Successful login",
+        "name": "User Logout to Swag Labs",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1014448399
+              "duration": 893882300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "the user is on the Newspapers.com homepage",
+            "name": "the user logged in to Swag labs",
             "match": {
-              "location": "steps\\login.js:4"
+              "location": "steps\\logoutSauceDemo.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 3714644799
+              "duration": 1875867500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "the user clicks the Sign In button",
+            "name": "the user click the burger menu",
             "match": {
-              "location": "steps\\login.js:8"
+              "location": "steps\\logoutSauceDemo.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1286765300
+              "duration": 118791900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the user enters valid credentials",
+            "name": "the user click the logout",
             "match": {
-              "location": "steps\\login.js:13"
+              "location": "steps\\logoutSauceDemo.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1059503899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user clicks the login button",
-            "match": {
-              "location": "steps\\login.js:28"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5007606099,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\mkris\\OneDrive\\Desktop\\testCallenge\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+              "duration": 1023428199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "the user should be logged in successfully",
+            "line": 8,
+            "name": "the app should successfully logout",
             "match": {
-              "location": "steps\\login.js:34"
+              "location": "steps\\logoutSauceDemo.js:25"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2020533099
             }
           },
           {
@@ -88,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 865781000
+              "duration": 858030200
             }
           }
         ],
@@ -101,11 +87,11 @@
         "type": "scenario"
       }
     ],
-    "id": "login-functionality",
+    "id": "logout-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login functionality",
+    "name": "Logout functionality",
     "tags": [],
-    "uri": "features\\login.feature"
+    "uri": "features\\logoutSauceDemo.feature"
   }
 ]

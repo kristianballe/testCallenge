@@ -1,6 +1,5 @@
 Feature: Login functionality
 
-@positive
 Scenario: Successful login
     Given the user is on the Newspapers.com homepage
     When the user clicks the Sign In button
