@@ -1,6 +1,6 @@
 Feature: Login functionality
 
-@positive_pass
+@positive
 Scenario: User Login to Swag Labs
     Given the user go to Swag labs
     When the user enters credentials in Swag labs

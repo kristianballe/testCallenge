@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "logout-functionality;user-logout-to-swag-labs",
+        "id": "filter;filter-the-product-from-z-to-a",
         "keyword": "Scenario",
         "line": 4,
-        "name": "User Logout to Swag Labs",
+        "name": "filter the product from Z to A",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 893882300
+              "duration": 924720100
             }
           },
           {
@@ -27,7 +27,184 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1875867500
+              "duration": 1897781999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user click the filter to select Z to A",
+            "match": {
+              "location": "steps\\filter.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34634399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the product should be in descending order by name",
+            "match": {
+              "location": "steps\\filter.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121622400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 603382900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "filter",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Filter",
+    "tags": [],
+    "uri": "features\\filter.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;user-login-to-swag-labs",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User Login to Swag Labs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1023585199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user go to Swag labs",
+            "match": {
+              "location": "steps\\loginSauceDemo.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1057857600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters credentials in Swag labs",
+            "match": {
+              "location": "steps\\loginSauceDemo.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216420799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user click the login button",
+            "match": {
+              "location": "steps\\loginSauceDemo.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141619900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the app proceeds to inventory page",
+            "match": {
+              "location": "steps\\loginSauceDemo.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014687299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 415744000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "features\\loginSauceDemo.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout-functionality;user-logout-to-swag-labs",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User Logout to Swag Labs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 829903099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user logged in to Swag labs",
+            "match": {
+              "location": "steps\\logoutSauceDemo.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1871337499
             }
           },
           {
@@ -40,7 +217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118791900
+              "duration": 90961499
             }
           },
           {
@@ -53,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1023428199
+              "duration": 1068189200
             }
           },
           {
@@ -66,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2020533099
+              "duration": 2016386399
             }
           },
           {
@@ -74,7 +251,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 858030200
+              "duration": 451772500
             }
           }
         ],
