@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
   "test": "cucumber-js --require steps/*.js --require support/hooks.js --format json:reports/json/cucumber_report.json",
-  "test:positive": "cucumber-js --require steps/*.js --require support/hooks.js --tags @positive --format json:reports/json/cucumber_report.json || true",
+  "test:positive": "cmd /C \"cucumber-js --require steps/*.js --require support/hooks.js --tags @positive --format json:reports/json/cucumber_report.json || exit /B 0\"",
   "report": "node generate-report.js",
   "e2e": "npm run test && npm run report",
   "e2e:positive": "npm run test:positive && npm run report"
