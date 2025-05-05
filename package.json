@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
   "test": "cucumber-js --require steps/*.js --require support/hooks.js --format json:reports/json/cucumber_report.json",
+  "test:positive": "cucumber-js --require steps/*.js --require support/hooks.js --tags @positive --format json:reports/json/cucumber_report.json || true",
   "report": "node generate-report.js",
-  "e2e": "npm run test && npm run report"
+  "e2e": "npm run test && npm run report",
+  "e2e:positive": "npm run test:positive && npm run report"
 },
   "repository": {
     "type": "git",

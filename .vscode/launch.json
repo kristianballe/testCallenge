@@ -8,12 +8,8 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "run",
-        "test",
-        "--",
-        "--require", "steps/*.js",
-        "--require", "support/hooks.js",
-        "--tags", "@positive",
-        "--format", "json:reports/json/cucumber_report.json"
+        "e2e:positive",
+        "--"
       ],
       // "postDebugTask": "generate-html-report",
       "skipFiles": [
